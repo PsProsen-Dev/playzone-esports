@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 type Variant = GalleryItem["variant"];
 
 const accents: Record<Variant, string> = {
-  amber: "#FFB800",
+  amber: "#FFFFFF",
   red: "#FF4D4D",
   blue: "#4DA3FF",
   green: "#3BD671",
@@ -62,8 +62,8 @@ function VariantArt({ item }: { item: GalleryItem }) {
           </div>
           <p className="font-display text-lg uppercase tracking-widest text-white/85 md:text-xl">Trophy Moment</p>
           <div className="flex gap-1.5">
-            {["#FF4D4D", "#FFB800", "#FFFFFF"].map((c) => (
-              <span key={c} className="h-1.5 w-10" style={{ background: c }} />
+            {["#FF4D4D", "#FFFFFF", "#D4D4D4"].map((c, i) => (
+              <span key={`${c}-${i}`} className="h-1.5 w-10" style={{ background: c }} />
             ))}
           </div>
         </div>
@@ -116,7 +116,7 @@ function VariantArt({ item }: { item: GalleryItem }) {
               {[["Team Havoc", "42"], ["Silent Strikers", "37"], ["Night Raiders", "31"], ["Rogue X", "24"]].map(([name, pts], i) => (
                 <div key={name} className="flex items-center justify-between bg-white/5 px-3 py-1.5">
                   <span className="text-sm font-semibold text-white/80">{name}</span>
-                  <span className="font-display text-sm" style={{ color: i === 0 ? "#FFB800" : color }}>{pts} PTS</span>
+                  <span className="font-display text-sm" style={{ color: i === 0 ? "#FFFFFF" : color }}>{pts} PTS</span>
                 </div>
               ))}
             </div>
@@ -148,7 +148,7 @@ export default function Gallery() {
                 aria-label={`${item.title}. ${item.caption}`}
                 className={cn(
                   "group relative aspect-[4/3] overflow-hidden border border-white/10 bg-pz-card transition-colors duration-300",
-                  "hover:border-pz-amber/60 hover:shadow-[0_0_32px_rgba(255,184,0,0.18)]",
+                  "hover:border-pz-amber/60 hover:shadow-[0_0_32px_rgba(255,255,255,0.18)]",
                   featureIds.has(item.id) && "col-span-2"
                 )}
               >

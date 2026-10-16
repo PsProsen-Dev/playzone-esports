@@ -95,7 +95,7 @@ export default function About() {
                       key={day}
                       className="flex items-center gap-4 border-b border-white/5 pb-4 last:border-b-0 last:pb-0"
                     >
-                      <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-full bg-pz-amber shadow-[0_0_8px_rgba(255,184,0,0.8)]" />
+                      <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-full bg-pz-amber shadow-[0_0_8px_rgba(255,255,255,0.6)]" />
                       <span className="font-display text-sm uppercase tracking-[0.2em] text-pz-muted">
                         {day}
                       </span>

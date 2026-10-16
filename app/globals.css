@@ -38,9 +38,9 @@ body {
   color: transparent;
 }
 
-/* Amber glow for primary CTAs */
+/* White glow for primary CTAs (remapped from amber to monochrome white) */
 .glow-amber {
-  box-shadow: 0 0 24px rgba(255, 184, 0, 0.35);
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.25);
 }
 
 /* Scanline sweep on hero */

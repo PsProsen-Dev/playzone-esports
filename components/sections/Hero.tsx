@@ -26,7 +26,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(circle at 50% 35%, rgba(255,184,0,0.10), transparent 60%)",
+            "radial-gradient(circle at 50% 35%, rgba(255,255,255,0.08), transparent 60%)",
         }}
       />
       <div
